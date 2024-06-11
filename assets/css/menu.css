@@ -54,7 +54,7 @@
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    width: 200px;
+    width: 100px;
     padding-left: 90px;
 }
 .right-nav-list a {
@@ -71,8 +71,14 @@
 }
 
 .main-container a:hover {
-    color: palevioletred;
+    color: orange;
+    
+    text-decoration: underline;
     transition: 0.2s;
+}
+
+body {
+    background-color: #373A40;
 }
 
 /* 
@@ -119,8 +125,13 @@ For website menu side bar */
 
 /* for food items */
 
+#heading {
+    margin-top: 20px;
+}
 h1{
     text-align: center;
+    color: white;
+    
 }
 
 bold{
@@ -131,7 +142,7 @@ bold{
     display: grid;
     grid-template-columns: auto auto auto auto; /* Simplified grid setup */
     gap: 10px;
-    margin: 45px auto 0 30px;
+    margin: 35px auto 0 30px;
     width: 100%; /* Adjusting the width calculation */
     height: 280px;
 }

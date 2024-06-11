@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Parent Container for website navigation bar */
+.main-container {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.main-container a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+/* Container for website logo */
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding-left: 30px;
+}
+
+
+/* For center navigation list */
+.center-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 500px;
+    padding-left: 200px;
+
+}
+
+.center-nav-list li a{
+    margin: 0 50px;
+    text-decoration: none;
+}
+
+/* For right navigation list */
+.right-nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 100px;
+    padding-left: 90px;
+}
+.right-nav-list a {
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+/* For Menu Icon */
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;  
+}
+
+.main-container a:hover {
+    color: orange;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+/* Background image for login page */
+body {
+    
+    background-image: url(../image/login.jpg);
+    height: 500px;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+       
+}
+
+/* Parent container for login form */
+.div-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 400px;
+    height: 360px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.div-container h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+.input-box input {
+    width: 360px;
+    padding: 12px 20px;
+    margin-left: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+   
+}
+
+.input-box label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 25px 20px 30px;
+}
+
+.remember-me a {
+    text-decoration: none;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+.log-btn {
+    background-color: orange;
+    height: 35px;
+    width: 360px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.div-container .register {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register p a {
+    font-weight: 600;
+    text-decoration: none;
+    color: red;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+    
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 800px) {
+    .center-nav-list {
+        width: 400px;
+        padding-left: 100px;
+    }
+
+    .center-nav-list li a {
+        margin: 0 30px;
+    }
+
+    .right-nav-list {
+        width: 150px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .center-nav-list, .right-nav-list {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .center-nav-list li, .right-nav-list li {
+        margin: 10px 0;
+    }
+
+    .img-div {
+        padding-left: 0;
+    }
+
+    .div-container {
+        width: 75%;
+        height: auto;
+    }
+
+    .input-box input, .log-btn {
+        width: 240px;
+        margin-left: 20px;
+    }
+
+    
+}
+
