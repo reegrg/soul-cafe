@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Parent Container for website navigation bar */
+.main-container {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+
+
+.main-container a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+/* Container for website logo */
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding-left: 30px;
+}
+
+
+/* For center navigation list */
+.center-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 500px;
+    padding-left: 200px;
+
+}
+
+.center-nav-list li a{
+    margin: 0 50px;
+    text-decoration: none;
+}
+
+/* For right navigation list */
+.right-nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 200px;
+    padding-left: 90px;
+}
+.right-nav-list a {
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+/* For Menu Icon */
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;  
+}
+
+body {
+    background-color: #373A40;
+}
+
+/* For restaurant headline and paragraph content */
+.content {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    
+}
+
+.home-content {
+    max-width: 900px;
+    gap: 20px;
+}
+
+.home-content h1 {
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+    margin-left: 100px;
+    margin-top: 60px;
+    color: #fff;
+
+
+}
+
+.home-content h1 span {
+    color: red;
+}
+
+.home-content p {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.order-button{
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 20px;
+    margin: 10px 200px;
+    height: 20px;
+}
+
+.order-button button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hero image of restaurant */
+.food-img {
+    height: 70px;
+    width: 100%;
+    margin-left: 200px;
+
+}
+
+/* Services restaurant provides */
+.service-content {
+    background-color: bisque;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 10px;
+}
+
+/* Images for services */
+.service-content img {
+    width: 90px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+/* Text content which includes services information */
+.text-content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px; 
+}
+
+.service-content h2 {
+    font-size: 18px;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.service-content p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.service-1, .service-2, .service-3 {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
